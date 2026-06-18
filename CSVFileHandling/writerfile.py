@@ -8,3 +8,9 @@ with open("names.csv" ,"w", newline="") as csvfile:
     writer.writerow({"Firstname": "a11", "Lastname": "a21"})
     writer.writerow({"Firstname": "a12", "Lastname": "a22"})
     writer.writerow({"Firstname": "a13", "Lastname": "a23"})
+
+with open("names.csv", "r", newline="") as csvfile:
+    reader = csv.DictReader(csvfile)
+    for i in reader:
+        print(i)
+    
