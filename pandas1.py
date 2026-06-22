@@ -59,4 +59,44 @@ data = pd.Series(np_array, index =['A','B','C','D','E','F','G','H','I'])
 # print("data extracted using .loc[] :\n",data.loc['B':'F']) # include F 
 print("data extracted using .iloc[] :\n",data.iloc[1:6]) #exclude 6  
 ################################################################## 
-# Binary Operations , Attribute  
+# Binary Operations , Attribute   
+
+import numpy as  np 
+import pandas as pd 
+arr1 = np.array([10,11,12])
+s1 = pd.Series(arr1)
+print(s1+10) #  + - % / // ** , > < >= <= == !- 
+
+## add operation on two series 
+series1 = pd.Series([1,2,3,5,6,7,9,1,10])
+series2 = pd.Series([2,3,5,2,5,6,1,3,0])
+
+print("Sum of series 1 and series 2 :\n",series1.add(series2))
+# sub ,  mul etc 
+
+print(" >  ", series1 > series2)
+################## attributes #######################################
+import numpy as  np 
+import pandas as pd 
+arr1 = np.array([10,11,12])
+s1 = pd.Series(arr1)
+print(s1.dtype)
+print(s1.values)
+print(s1.ndim , s1.shape)
+print(s1.values.itemsize) # 8 byte 
+print(s1.size)
+####################################################################
+############################### DataFrame ##########################
+L1 = [ ["abc",20] ,["abc2",25],["abc3",30]]
+df1= pd.DataFrame(L1, index=["e1","e2","e3"], columns=["name","age"])
+print(df1)
+
+data = {'Name': ['Asabeneh', 'David', 'John'], 'Country':[
+    'Finland', 'UK', 'Sweden'], 'City': ['Helsiki', 'London', 'Stockholm']}
+df = pd.DataFrame(data)
+print(df)
+################
+df.to_csv("mydata.csv")
+########## read csv  ###################
+df = pd.read_csv('data.csv')
+print(df)
