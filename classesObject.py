@@ -155,32 +155,69 @@
 # account.withdraw(2000)
 ######################################################
 
-class Light:
-    def __init__(self):
-        self.is_on = False
+# class Light:
+#     def __init__(self):
+#         self.is_on = False
 
-    def turn_on(self):
-        self.is_on = True
-        print("Light is ON")
+#     def turn_on(self):
+#         self.is_on = True
+#         print("Light is ON")
 
-    def turn_off(self):
-        self.is_on = False
-        print("Light is OFF")
+#     def turn_off(self):
+#         self.is_on = False
+#         print("Light is OFF")
 
-    def status(self):
-        state = "ON" if self.is_on else "OFF"
-        print(f"Current status: {state}")
+#     def status(self):
+#         state = "ON" if self.is_on else "OFF"
+#         print(f"Current status: {state}")
 
-light = Light()
-light.turn_on()
-light.status()
-light.turn_off()
-light.status()
+# light = Light()
+# light.turn_on()
+# light.status()
+# light.turn_off()
+# light.status()
 ######################################################
 
 
 ######################################################
 ###### class variable and method  attribute
     #  static variable @staticmethod
-    
-####### init -> parameters 
+    # init -> parameters 
+# class Employee:
+#     companyName = "ABC" #class variaBLE
+#     def __init__(self, name="", dept="training", salary=0):
+#         self.name = name 
+#         self.dept = dept 
+#         self.salary = salary 
+#     def display(self):
+#         print(Employee.companyName)
+#         print(self.name , self.dept, self.salary)
+
+# e1 = Employee("E1", "IT", 123456)
+# e2 = Employee("E2", "SALES", 123456)
+# e3 = Employee("E3", "IT", 123456)
+# e1.display()
+# Employee.companyName = "ABC co"
+# e2.display()
+# e1.display()
+####### 
+class Employee:
+    companyName = "ABC" #class variaBLE
+    @staticmethod
+    def changeCompanyName():
+        companyName = input("enter new company name : ")
+    def __init__(self, name, dept, salary):
+        self.name = name 
+        self.dept = dept 
+        self.salary = salary 
+    def display(self):
+        print(Employee.companyName)
+        print(self.name , self.dept, self.salary)
+
+e1 = Employee("E1", "IT", 123456)
+e2 = Employee("E2", "SALES", 123456)
+e3 = Employee("E3", "IT", 123456)
+e1.display()
+Employee.changeCompanyName()
+e2.display()
+e1.display()

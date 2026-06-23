@@ -1,3 +1,10 @@
+# 1. Single Level 
+# 2. MultiLevel
+# 3. Multiple 
+# 4. hierarchical 
+# 5. hybrid
+
+# single Level
 # Bus Subclass Inheriting from Vehicle
 # class Vehicle:
 #     def __init__(self, name, max_speed):
@@ -10,11 +17,13 @@
 # class Bus(Vehicle):
 #     pass
 
-# bus1 = Bus("School Bus", 120)
+# bus1 = Bus("School Bus", 60)
 # bus1.display()
+# bus2 = Bus("Travel", 100)
+# bus2.display()
 
-# Parent Method Using super()
-
+##################################################
+# Overriding 
 # class Vehicle:
 #     def __init__(self, name, max_speed):
 #         self.name = name
@@ -29,10 +38,22 @@
 
 # bus = Bus("School Bus", 120)
 # bus.seating_capacity()
-
+# v1 = Vehicle("Car", 180)
+# v1.seating_capacity(5)
 ##################################################
-
+# Parent Method Using super()
+# class A: # super 
+#     def __init__(self):
+#         print("A constructor ")
+# class B(A):
+#     def __init__(self):
+#         # super().__init__()
+#         A.__init__(self)
+#         print("B constructor ")
+# obj1 = B()
+###################################################  
 # Maintenance Fee in Child Class via super()
+
 # class Vehicle:
 #     def __init__(self, base_fare):
 #         self.base_fare = base_fare
