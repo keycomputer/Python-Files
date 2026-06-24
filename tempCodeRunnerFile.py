@@ -1,14 +1,8 @@
-class Vehicle:
-    def __init__(self, base_fare):
-        self.base_fare = base_fare
 
-class Taxi(Vehicle):
-    def __init__(self, base_fare):
-        super().__init__(base_fare)
-        self.maintenance_fee = base_fare * 0.10
+        return "Meow!"
+dog = Dog()
+cat = Cat()
 
-    def total_fare(self):
-        return self.base_fare + self.maintenance_fee
+print("Dog says:", dog.speak())
+print("Cat says:", cat.speak())
 
-taxi = Taxi(500)
-print("Total fare with maintenance fee:", taxi.total_fare())

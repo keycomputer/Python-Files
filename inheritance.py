@@ -68,8 +68,10 @@
 
 # taxi = Taxi(500)
 # print("Total fare with maintenance fee:", taxi.total_fare())
+###################################################
 ####################################################
-# Polymorphism with Dog & Cat
+
+#Overriding hierarchical
 # class Animal:
 #     def speak(self):
 #         return "Some sound"
@@ -87,6 +89,27 @@
 
 # print("Dog says:", dog.speak())
 # print("Cat says:", cat.speak())
+
+##################################################
+########## override avoid ######################
+# class Animal:
+#     def speak(self):
+#         print("Some sound")
+# class Dog(Animal):
+#     def speak(self):
+#         # super().speak()
+#         Animal.speak(self)
+#         return "Woof!"
+# class Cat(Animal):
+#     def speak(self):
+#         super().speak()
+#         return "Meow!"
+# dog = Dog()
+# cat = Cat()
+
+# print("Dog says:", dog.speak())
+# print("Cat says:", cat.speak())
+
 
 ####################################################
 # Full-Time vs Part-Time Employee Pay
@@ -124,4 +147,41 @@
 
 ####################################################
 
+###### MULTIPLE ############# 
 
+# class A :
+#     def funct1(self):
+#         print("class A function ")
+# class B:
+#     def funct2(self):
+#         print("class B function ")
+# class C(A,B):
+#     def funct3(self):
+#         print("Class C function ")
+# obj = C() 
+# obj.funct1()
+# obj.funct2()
+# obj.funct3()
+##########################################################
+#### multiple -> init and override ####
+# class A :
+#     def __init__(self):
+#         print("A class constructor ")
+#     def funct(self):
+#         print("class A function ")
+# class B:
+#     def __init__(self):
+#         print("B class constructor ")
+#     def funct(self):
+#         print("class B function ")
+# class C(A,B):
+#     def __init__(self):
+#         A.__init__(self)
+#         B.__init__(self)
+#         print("C class constructor ")
+#     def funct(self):
+#         A.funct(self)
+#         B.funct(self)
+#         print("Class C function ")
+# obj = C() 
+# obj.funct()
