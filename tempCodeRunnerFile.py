@@ -1,8 +1,2 @@
-
-        return "Meow!"
-dog = Dog()
-cat = Cat()
-
-print("Dog says:", dog.speak())
-print("Cat says:", cat.speak())
-
+for i in range(1, n+1):
+        yield i*i

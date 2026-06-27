@@ -212,6 +212,14 @@
 
 # # Special Methods for Operator Overloading
 # # Python provides specific methods for each operator.
+# class Marks:
+#     def __init__(self, m=0):
+#         self.m = m 
+#     def output(self):
+#         print("Marks Obtained ", m)
+# m1 = Marks(80)
+# m2 = Marks(65)
+# print(m1+m2)
 
 # # Binary Operators
 # # Operator	Magic Method
@@ -222,21 +230,24 @@
 # # //	__floordiv__(self, other)
 # # %	__mod__(self, other)
 # # **	__pow__(self, other)
-
 # class A:
 #     def __init__(self, value):
 #         self.value = value
-
 #     def __add__(self, other):
 #         return self.value + other.value
-
+#     def average(self, obj):
+#         return (self.value+obj.value) / 2  
+#     def __pow__(self, obj):
+#         return self.value ** obj.value
 # ob1 = A(1)
 # ob2 = A(2)
 # print(ob1 + ob2)
 # print(A.__add__(ob1, ob2))
 # print(ob1.__add__(ob2))
-
-# # Comparison Operators
+# print(ob1.average(ob2))
+# print(ob1**ob2)
+#####################################################
+# # Comparison Operators / Relational Operators
 # # Operator	Magic Method
 # # <	__lt__(self, other)
 # # >	__gt__(self, other)
@@ -244,7 +255,6 @@
 # # >=	__ge__(self, other)
 # # ==	__eq__(self, other)
 # # !=	__ne__(self, other)
-
 # class A:
 #     def __init__(self, a):
 #         self.a = a
@@ -259,13 +269,10 @@
 # else:
 #     print("ob2 is greater than ob1")
     
-# #     Overloading Boolean Operators
-# # We can also overload Boolean operators using magic methods:
-
+# #     Overloading Boolean Operators / Logical Operator 
 # # and: __and__(self, other)
 # # or: __or__(self, other)
 # # not: __not__(self)
-    
 # class MyClass:
 #     def __init__(self, value):
 #         self.value = value
@@ -288,8 +295,25 @@
 # # //=	__ifloordiv__(self, other)
 # # %=	__imod__(self, other)
 # # **=	__ipow__(self, other)
+
+# class Product:
+#     def __init__(self):
+#         self.price = float(input("enter price "))
+#         # self.name , self.stock, self.disc
+#     def __iadd__(self,other):
+#         self.price += other.price 
+#         return self.price
+#     def __str__(self):
+#         return str(self.price)
+# p1 = Product()
+# p2 =Product()
+# p1+=p2
+# print(p1) 
+######################################
 # # Unary Operators
 # # Operator	Magic Method
 # # -	__neg__(self)
 # # +	__pos__(self)
 # # ~	__invert__(self)
+########################################
+# 5 -> 101 -> 010 

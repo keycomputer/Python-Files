@@ -7,10 +7,12 @@
 # entire data at once, instead it gives one value when 
 # asked. This saves memory and follows lazy evaluation 
 # (creates values only when needed).
-# l = iter(['Geeks', 'For', 'Geeks'])
+
+# l = iter(["1","abc",1.234,True])
 # print(next(l))
 # print(next(l))
 # print(next(l))
+
 #########################
 # Generators
 # A generator is another way to create iterators, but 
@@ -18,16 +20,16 @@
 # storing all values, generators produce values on the 
 # fly using the yield keyword.
 
-# def sq_numbers(n):
-#     for i in range(1, n+1):
-#         yield i*i
+def sq_numbers(n):
+    for i in range(1, n+1):
+        yield i*i
 
-# a = sq_numbers(3)
+a = sq_numbers(int(input("Enter number ")))
 
-# print("The square of numbers 1, 2, 3 are:")
-# print(next(a))
-# print(next(a))
-# print(next(a))
+print("The square of numbers 1, 2, 3 are:")
+print(next(a))
+print(next(a))
+print(next(a))
 #########################################
 
 
