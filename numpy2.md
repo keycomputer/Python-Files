@@ -1,4 +1,3 @@
-- [📘 Day 24](#-day-24)
   - [Python for Statistical Analysis](#python-for-statistical-analysis)
   - [Statistics](#statistics)
   - [Data](#data)
@@ -46,7 +45,6 @@
 - [Summery](#summery)
   - [💻 Exercises: Day 24](#-exercises-day-24)
 
-# 📘 Day 24
 
 ## Python for Statistical Analysis
 
