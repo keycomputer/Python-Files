@@ -11,56 +11,69 @@
 # except:
 #     code in this block run if things go wrong
 
+# num1 = int(input("Enter a number: "))
+# num2 = int(input("Enter another number: "))
+# print(f"division of {num1} and {num2} is: {num1 / num2}")
 
-
-try:
-    name = input('Enter your name:')
-    year_born = input('Year you were born:')
-    age = 2019 - year_born
-    print(f'You are {name}. And your age is {age}.')
-except:
-    print('Something went wrong')
+# try:
+#     num1 = int(input("Enter a number: "))
+#     num2 = int(input("Enter another number: "))
+#     print(f"division of {num1} and {num2} is: {num1 / num2}")
+# except ZeroDivisionError:
+#     print("Error: Division by zero is not allowed.")
+# except Exception as e:
+#     print(f"An error occurred: {e}")
+# print("Program continues after handling the exception.")
+#################################################################
+# try:
+#     name = eval(input('Enter your name:'))
+#     year_born = eval(input('Year you were born:'))
+#     age = 2026 - year_born
+#     print(f'You are {name}. And your age is {age}.')
+# except:
+#     print('Something went wrong')
+############################################################
     
-    
-    
-try:
-    name = input('Enter your name:')
-    year_born = input('Year you were born:')
-    age = 2019 - year_born
-    print(f'You are {name}. And your age is {age}.')
-except TypeError:
-    print('Type error occured')
-except ValueError:
-    print('Value error occured')
-except ZeroDivisionError:
-    print('zero division error occured')
-    
-    ####################################################
-    
-try:
-    name = input('Enter your name:')
-    year_born = input('Year you born:')
-    age = 2019 - int(year_born)
-    print(f'You are {name}. And your age is {age}.')
-except TypeError:
-    print('Type error occur')
-except ValueError:
-    print('Value error occur')
-except ZeroDivisionError:
-    print('zero division error occur')
-else:
-    print('I usually run with the try block')
-finally:
-    print('I alway run.')
+# try:
+#     name = input('Enter your name:')
+#     year_born = input('Year you were born:')
+#     age = 2019 - year_born
+#     print(f'You are {name}. And your age is {age}.')
+# except TypeError:
+#     print('Type error occured')
+# except ValueError:
+#     print('Value error occured')
+# except ZeroDivisionError:
+#     print('zero division error occured')
     
 ####################################################
+    
+# try:
+#     name = input('Enter your name:')
+#     year_born = input('Year you born:')
+#     age = 2019 - int(year_born)
+#     print(f'You are {name}. And your age is {age}.')
+# except TypeError:
+#     print('Type error occur')
+# except ValueError:
+#     print('Value error occur')
+# except ZeroDivisionError:
+#     print('zero division error occur')
+# else:
+#     print('I usually run with the try block')
+# finally:
+#     print('I alway run.')
+    
+# ####################################################
 
-# It is also shorten the above code as follows:
+## It is also shorten the above code as follows:
 
-try:
-    name = input('Enter your name:')
-    year_born = input('Year you born:')
-    age = 2019 - int(year_born)
-    print(f'You are {name}. And your age is {age}.')
-except Exception as e:
-    print(e)
+# try:
+#     name = input('Enter your name:')
+#     year_born = input('Year you born:')
+#     age = 2019 - int(year_born)
+#     print(f'You are {name}. And your age is {age}.')
+# except Exception as e:
+#     print(e)
+
+############################################################
