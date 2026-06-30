@@ -56,28 +56,54 @@ with open("student.csv", "r", newline="") as file1:
 # (i) Write a function read_data() which reads all the data from the file and displays the details of
 # all the 'Cancer' patients. 
 # (ii) Write a function count_rec() which countsand returns the number of records in the file
-import csv
-def read_data():
-    with open("P_record.csv", "r", newline="") as file1:
-        reader = csv.reader(file1)
-        for i in reader:
-            if i[1] == "Cancer":
-                print(i)   
-# ////#  example read_data_amount(amt) function to read and display records with amount greater than a specified value 
-def read_data_amount(amt): # amt -> float
-    with open("P_record.csv", "r", newline="") as file1:
-        reader = csv.reader(file1)
-        for i in reader:
-            if float(i[3]) > amt:
-                print(i)
+# import csv
+# def read_data():
+#     with open("P_record.csv", "r", newline="") as file1:
+#         reader = csv.reader(file1)
+#         for i in reader:
+#             if i[1] == "Cancer":
+#                 print(i)   
+# # ////#  example read_data_amount(amt) function to read and display records with amount greater than a specified value 
+# def read_data_amount(amt): # amt -> float
+#     with open("P_record.csv", "r", newline="") as file1:
+#         reader = csv.reader(file1)
+#         for i in reader:
+#             if float(i[3]) > amt:
+#                 print(i)
 
-def count_rec():
-    count = 0
-    with open("P_record.csv", "r", newline="") as file1:
-        reader = csv.reader(file1)
-        for i in reader:
-            count += 1
-    return count
+# def count_rec():
+#     count = 0
+#     with open("P_record.csv", "r", newline="") as file1:
+#         reader = csv.reader(file1)
+#         for i in reader:
+#             count += 1
+#     return count
+# ///////////////////////////////////////////////////////
+# Question 2024
+# Q32
+# def add_device():
+#     with open("peripheral.csv", "a", newline="") as file1:
+#         writer = csv.writer(file1)
+#         p_id = int(input("Enter device id: "))
+#         p_name = input("Enter device name: ")
+#         p_price = float(input("Enter device price: "))
+#         writer.writerow([p_id, p_name, p_price])
+
+# def Count_device():
+#     count = 0
+#     with open("peripheral.csv",'r', newline="") as file1:
+#         reader = csv.reader(file1)
+#         for i in reader:
+#             if float(i[2]) < 1000:
+#                 print(i)
+#                 count+=1
+#     return count 
+##############################################################################
+
+
+
+
+
 
 # /////////////////////////////////////////////////////////////////////
 # import csv 

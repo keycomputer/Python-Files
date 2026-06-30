@@ -14,9 +14,9 @@ arr2 = np.arange(1,100,15.5)
 print(arr2)
 
 # 3. Zeros and Ones 
-arr1  = np.zeros(10)
+arr1  = np.zeros(10) # one dimensional array
 print(arr1)
-arr1  = np.zeros((3,10))
+arr1  = np.zeros((3,10)) # two dimensional array
 print(arr1)
 
 arr1  = np.ones(10)
@@ -27,7 +27,8 @@ print(arr1)
 # 4. full
 arr1 = np.full(10,100)
 print(arr1)
-
+arr2 = np.full((3,10), 100)
+print(arr2)
 ##################3 random functions ##########################
 print(np.random.rand()) 
 print(np.random.random()) 
@@ -45,7 +46,7 @@ arr1 = np.array([4,7,345,67,54,6,67,3432])
 print(arr1[6]) # 6th index value 
 
 arr1 = np.array([[1,2,3], [4,5,6]])
-print(arr1[1, 2]) # 2ndrow and 3 column data index value  
+print(arr1[1, 2]) # 2ndrow and 3 column data index value   # List1[2][3]
 
 #### negative indexing 
 arr1 = np.array([4,7,345,67,54,6,67,3432])
@@ -67,7 +68,10 @@ import numpy as np
 arr1 = np.array([32454,65757,3232,567678,32323,34554,1345423,34346,234543,546534,546342,4356342])
 indices = np.array([2,5,8])
 print("Array " , arr1 )
-print(arr1 [ indices ])
+print(arr1 [ indices ])# arr1[[2,5,8]]
+
+
+ 
 #### Boolean indexing #### 
 print("----- Boolean Indexing -------- ")
 arr1 = np.array([32454,65757,3232,567678])

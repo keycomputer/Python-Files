@@ -3,27 +3,27 @@
 # print(random.random())
 
 from random import *
-# print(random())   #0 to <1 
-# print(randint(1,11)) # inclusive
-# seed(1)
-# print(random())
-# print(random())
-# print(random())
-# print(random())
-# print(random())
-# seed(10)
-# print(random())
-# print(random())
-# print(random())
-# print(random())
-# seed(1)
-# print(random())
-# print(random())
-# print(random())
-# print(random())
-# seed(10)
-# print(random())
-# print(random())
+print(random())   #0 to <1 
+print(randint(1,11)) # inclusive
+seed(1)
+print(random())
+print(random())
+print(random())
+print(random())
+print(random())
+seed(10)
+print(random())
+print(random())
+print(random())
+print(random())
+seed(1)
+print(random())
+print(random())
+print(random())
+print(random())
+seed(10)
+print(random())
+print(random())
 
 
 # print(randrange(1,11))

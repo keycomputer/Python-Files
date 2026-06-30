@@ -7,26 +7,46 @@
 # "t" - Text - Default value. Text mode
 # "b" - Binary - Binary mode (e.g. images)
 
+
 ############################################################
 ### text file handling ###
 # file1 = open("file1.txt", "w")  # open file in write mode
 # file1.write("Hello, this is a sample text file.\n")
 # file1.write("This file is created for demonstration purposes.\n")
 # file1.close()
+
+####### text file n number of lines input usinfg write 
+# file1 = open("file1.txt", "w")
+# str1 = input("enter any sentence ")
+# while str1 != "":
+#     file1.write(str1+"\n")
+#     str1 = input("enter any sentence ")
+# file1.close()
+
 ###################################
 # List1=[] # list of sentences
 # file1= open("file1.txt","w")
 # n = int(input("Enter number of sentences you want to write in the file: "))
 # for i in range(n):
-#     sentence = input("Enter sentence {}: ".format(i+1))
+#     sentence = input("Enter sentence ")
 #     List1.append(sentence+"\n") # add newline character to each sentence
 # file1.writelines(List1) # write list of sentences to the file
 # file1.close()
-####################################
-# file1 = open("file1.txt", "r")  # open file in read mode
-# content = file1.read()  # read the entire content of the file
-# print(content)
-#########################
+
+########################################################
+# read() -> entire file ->string format return 
+# read(n) -> read n of number of characters 
+file1 = open("file1.txt", "r")  # open file in read mode
+content = file1.read()  # read the entire content of the file
+print(content)
+######################################
+file1 = open("file1.txt", "r")  # open file in read mode
+content = file1.read(10)  # read the entire content of the file
+print(content)
+content = file1.read(10)  # read the entire content of the file
+print(content)
+
+#########################################################
 # file1 = open("file1.txt", "r")  # open file in read mode
 # content = file1.readlines() # read the content of the file line by line
 # for i in content:

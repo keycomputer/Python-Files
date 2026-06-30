@@ -20,12 +20,12 @@
 # print(str4)
 
 # ///// raw literal 
-# str1 = "C:\newfolder\temp "
-# print(str1)
-# str2 ="C:\\newfolder\\temp"
-# print(str2)
-# str3 = r'C:\newfolder\temp'
-# print(str3)
+str1 = "C:\newfolder\temp "
+print(str1)
+str2 ="C:\\newfolder\\temp"
+print(str2)
+str3 = r'C:\newfolder\temp'
+print(str3)
 
 # ///////////////////
 # a = str(1)
@@ -61,23 +61,23 @@
 #   0 1 2 3 4 5 6 7 8 9 
 #   A B C D E F G H I J 
 # -10-9-8-7-6-5-4-3-2-1 
-str1 = "ABCDEFGHIJ"
-print(str1[0:10 ])
-print(str1[-10 : -1 ])
-print(str1[ : ])
-print(str1[ : : ])
-print(str1[ : 5]) # start , end= 4 index 
-print(str1 [5 : ]) # start =5, end 
-print(str1[-10: ]) # line 64 , end 
-print(str1 [ -4: ]) 
+# str1 = "ABCDEFGHIJ"
+# print(str1[0:10 ])
+# print(str1[-10 : -1 ])
+# print(str1[ : ])
+# print(str1[ : : ])
+# print(str1[ : 5]) # start , end= 4 index 
+# print(str1 [5 : ]) # start =5, end 
+# print(str1[-10: ]) # line 64 , end 
+# print(str1 [ -4: ]) 
 
-print(str1[ :: 2]) # start, end, step =2 
-print(str1[ 0 : 7:2])
-print(str1[9:2:-1]) 
-print(str1[-1:-8:-1 ])
+# print(str1[ :: 2]) # start, end, step =2 
+# print(str1[ 0 : 7:2])
+# print(str1[9:2:-1]) 
+# print(str1[-1:-8:-1 ])
 
 
-print(str1[ : : -1 ]) ## reverse the data 
+# print(str1[ : : -1 ]) ## reverse the data 
 
 # str1 = "abcdef"
 # str2 = r'abcdef'
@@ -102,7 +102,7 @@ print(str1[ : : -1 ]) ## reverse the data
 # str4 = "\"this is a quote\""
 # print(str4)
 ###########################################
-name = "abcde"
+# name = "abcde"
 # for i in name:
 #     print(i)
 
@@ -217,35 +217,35 @@ name = "abcde"
 #     print(str1[ : len(str1)-i])
 
 ######################## 
-#1 
-print("abc".isupper())
-#2 
-print("abc".islower())
-#3
-print("abc".isalnum())
-#4
-print("abc".isalpha())
-#5
-print("123".isdigit())
-#6 
-print(" ".isspace())
-#7 
-print("This Is String".istitle())
+# #1 
+# print("abc".isupper())
+# #2 
+# print("abc".islower())
+# #3
+# print("abc".isalnum())
+# #4
+# print("abc".isalpha())
+# #5
+# print("123".isdigit())
+# #6 
+# print(" ".isspace())
+# #7 
+# print("This Is String".istitle())
 
-#8 
-print("abc".upper())
-print("aBc".upper())
-#9 
-print("ABC".lower())
-print("aBc".lower())
-#10 
-print("aBc".swapcase())
-# 11 
-print("this is string".capitalize())
-#12 
-print("this is string".title())
+# #8 
+# print("abc".upper())
+# print("aBc".upper())
+# #9 
+# print("ABC".lower())
+# print("aBc".lower())
+# #10 
+# print("aBc".swapcase())
+# # 11 
+# print("this is string".capitalize())
+# #12 
+# print("this is string".title())
 #13 
-print("   this is string     ".strip())
+print("   this is string     ".strip()) # right and left space 
 print("the abc the".strip("the"))
 print("the abc the".strip("the").strip())
 #14 
