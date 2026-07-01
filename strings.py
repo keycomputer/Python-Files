@@ -278,6 +278,7 @@ print(str1)
 
 #19 
 # partition - size 3 
+
 str1 = "this those this those"
 t1= str1.partition("those")
 print(t1)
@@ -325,13 +326,13 @@ print("abc".rjust(50,"-"))
 
 # 26
 # index , rindex
-# str1 = "abcabcabc"
-# print(str1.index("a"))
-# # print(str1.index("z")) # error 
-# if "z" in str1:
-#     print(str1.index("z"))
-# else:
-#     print("not found ")
+str1 = "abcabcabc"
+print(str1.index("a"))
+# print(str1.index("z")) # error 
+if "z" in str1:
+    print(str1.index("z"))
+else:
+    print("not found ")
 # print(str1.index("a", 1))
 # print(str1.index("a", 1,2))
 # print(str1.index("a",-5)) # using negative indexing 

@@ -92,10 +92,142 @@
 
 ######################################################
 
+# amount = int(input("enter "))
+# n500 = amount // 500 
+# # amount = amount - (n500 * 500)
+# amount = amount % 500 
+
+# n200 = amount // 200 
+# amount= amount % 200 
+
+# n100 = amount // 100
+# amount = amount % 100
+
+# n50 = amount // 50
+# amount = amount % 50
+
+# n20 = amount // 20
+# amount = amount % 20
+
+# n10 = amount // 10
+# amount = amount % 10
+# print(n500, n200, n100,n50, n20, n10 )
+
+######################################\
+    # reverse of four digit 
+# num = int(input("enter any number "))
+# rev = 0 
+# r = num % 10 
+# # rev = r * 1000 
+# rev = rev * 10 + r # 0 * 10 + 4 
+# num = num // 10 
+
+# r = num % 10 
+# # rev = rev + r * 100
+# rev = rev * 10 + r   # 4 * 10 + 3 
+# num = num // 10 
+
+# r = num % 10 
+# # rev = rev + r * 10 
+# rev = rev * 10 + r 
+# num = num // 10 
+
+# r = num % 10 ## 1 %10 ??? 
+# # rev = rev + r
+# rev = rev * 10 + r  
+# num = num // 10 ## 1 // 10 
+# print(rev)
 
 
+#########################################
+# r = int(input("enter any number "))
+# area  = 3.14 * r * r 
+# circ  = 3.14 * 2 * r 
+# print(area, circ)
+# ######################
+# l=int(input("enter l "))
+# b=int(input("enter b ")) 
+# area = l*b 
+# peri = 2*(l+b)
+# print(area, peri)
+# ######################
+# side = int(input("enter side "))
+# area = side ** 2 
+# peri  = 2 *side 
+# print(area, peri)
+#####################################################
+### Assignment Operator 
+# += -= *= /= //= **= %= 
+# a = 10 
+# a = a + 1 
+# a += 1
+# print(a)
+# ########################
+# a = a - 1 
+# a -= 1
+######################################################
+# relational operator / conditional 
+# > < >= <= == != 
+# num1 = int(input("enter"))
+# num2 = int(input("enter"))
+# print(num1  > num2)
+# print(num1  < num2)
+# print(num1  >= num2)
+# print(num1  <= num2)
+# print(num1  == num2)
+# print(num1  !=  num2)
+###########################################################
+## # if ,  if else , if elif , if if or else if 
+# num=int(input("enter "))
+# if num > 100: 
+#     print("yes")
+#     print("number is greater than 100 ")
+# else:
+#     print("No")
+#     print("number is not greater than 100 ")   
+######################################
+# max ( two numbers)
+# a = int(input())
+# b = int(input())
+# if a > b :
+#     print("A is greater")
+# if b > a :
+#     print("B is greater ")
+# if a == b:
+#     print("A equal B")
+########################
+# if a > b: 
+#     print("A")
+# elif b> a:
+#     print("B")
+# else:
+#     print("equal ")
+    
+######################################
+salary = int(input("enter basic "))
+gross = salary * 12 
+if gross <= 400000:
+    tax = 0 
+elif gross <= 800000:
+    tax = gross*0.05
+elif gross <= 1200000:
+    tax = gross*0.10
+elif gross <= 1600000:
+    tax = gross*0.15
+elif gross <= 2000000:
+    tax = gross*0.20 
+elif gross <= 2400000:
+    tax = gross*0.25 
+else:
+    tax = gross *0.30 
+print("Tax =", tax)
 
+#################and or not logical operators #################
 
+######## leap year 
+######## buzz 
+######## divisibility
+########################
 
 
 
