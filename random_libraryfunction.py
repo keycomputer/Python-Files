@@ -3,8 +3,8 @@
 # print(random.random())
 
 from random import *
-print(random())   #0 to <1 
-print(randint(1,11)) # inclusive
+# print(random())   #0 to <1 
+# print(randint(1,11)) # inclusive
 seed(1)
 print(random())
 print(random())

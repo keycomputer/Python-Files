@@ -204,31 +204,119 @@
 #     print("equal ")
     
 ######################################
-salary = int(input("enter basic "))
-gross = salary * 12 
-if gross <= 400000:
-    tax = 0 
-elif gross <= 800000:
-    tax = gross*0.05
-elif gross <= 1200000:
-    tax = gross*0.10
-elif gross <= 1600000:
-    tax = gross*0.15
-elif gross <= 2000000:
-    tax = gross*0.20 
-elif gross <= 2400000:
-    tax = gross*0.25 
-else:
-    tax = gross *0.30 
-print("Tax =", tax)
+# salary = int(input("enter basic "))
+# gross = salary * 12 
+# if gross <= 400000:
+#     tax = 0 
+# elif gross <= 800000:
+#     tax = gross*0.05
+# elif gross <= 1200000:
+#     tax = gross*0.10
+# elif gross <= 1600000:
+#     tax = gross*0.15
+# elif gross <= 2000000:
+#     tax = gross*0.20 
+# elif gross <= 2400000:
+#     tax = gross*0.25 
+# else:
+#     tax = gross *0.30 
+# print("Tax =", tax)
 
-#################and or not logical operators #################
-
+################# and or not logical operators #################
+# and  *
+# print(1 == 1 and 1 <=2 )  # 1 * 1 
+# print(1== 1 and 1 > 2 )  # 1 * 0
+# # or 
+# print(1 == 1 or 1 >2  ) # 1 + 0 
+# # not 
+# print(not(1==1))
+########################################
+###### max - three numbers
+# a = int(input("enter number 1 "))
+# b = int(input("enter number 1 "))
+# c = int(input("enter number 1 "))
+# a , b , c = map(int, input("Enter three number ").split())
+# if a > b:
+#     if a > c:
+#         print("A")
+#     else:
+#         print("C")
+# else:
+#     if b > c:
+#         print("B")
+#     else:
+#         print("C")
+# if a > b and a > c: 
+#     print("a")
+# elif b> a and b> c:
+#     print("b")
+# elif c>a and c>b:
+#     print("c")
+##########################################
+#    program to check whether a number is negative, positive or zero.
+# num = int(input("enter "))
+# if num > 0:
+#     print("positive")
+# elif num < 0:
+#     print("negative")
+# else:
+    # print("zero") 
+#  program to check whether a number is divisible by 5 and 11 or not.
+# num = int(input("enter "))
+# if num % 5 == 0 and num % 11 ==0 :
+#     print("yes ")
+# else:
+#     print("not ")
+#########################################
+#  check whether a number is even or odd.
+# num = int(input("enter "))
+# if num % 2 == 0:
+#     print("even ")
+# else :
+#     print("Odd")
+########################################
 ######## leap year 
-######## buzz 
-######## divisibility
+# year = int(input("enter year "))
+# # According to the Gregorian calendar, which is the 
+# # civil calendar in use today, years evenly divisible 
+# # by 4 are leap years, with the exception of centurial 
+# # years that are not evenly divisible by 400. Therefore, 
+# # the years 1700, 1800, 1900 and 2100 are not leap years,
+# # but 1600, 2000, and 2400 are leap years.
+# if year % 100 == 0:
+#     if year % 400 == 0:
+#         print("leap")
+#     else:
+#         print("not a ")
+# else :
+#     if  year % 4 == 0 :
+#         print("leap")
+#     else:
+#         print("not a ")
+# if (year % 100 !=0 and year % 4==0) or year % 400 ==0:
+#     print("leap")
+# else:
+#     print("not a" )
+######## check whether the triangle is equilateral, isosceles or scalene triangle.
+# a = int(input("enter side 1 "))
+# b = int(input("enter side 1 "))
+# c = int(input("enter side 1 "))
+# if a == b and b == c:
+#     print("equi")
+# elif ( a == b ) or (b == c ) or (a == c):
+#     print("iso")
+# else:
+#     print("scal")
 ########################
+################################################################
+# Match Case 
 
+
+
+
+# One Line if 
+
+#################################################################
 
 
 

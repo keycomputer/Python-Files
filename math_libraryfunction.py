@@ -1,10 +1,9 @@
 ########## math
-
 import math
 # print(math.factorial(10))
 # print(math.gcd(10,15,17,20))
 # print(math.gcd(10,15,20))
-# # N! / (N-K)! * (K!)
+# # # N! / (N-K)! * (K!)
 # print(math.comb(10,2))
 # print(math.lcm(100,111))
 # print(math.lcm(100,200))
@@ -12,8 +11,12 @@ import math
 # print(math.sqrt(100))
 # print(math.sqrt(100.100))
 # print(math.isqrt(100))
-# # print(math.isqrt(100.100)) # error
+# print(math.isqrt(100.100)) # error
 
+# import numpy as np 
+# arr1 = np.array(list(map(int, input("enter numbers(seperated by , ) ").split(","))))
+# print(np.sqrt(arr1))
+    
 # from math import *
 # print(sqrt(100))
 
@@ -59,6 +62,7 @@ import math
 # print(math.isnan(np.nan)) # not a number
 # print(math.isfinite(np.nan))
 
+# print("next after")
 # print(math.nextafter(100, 120))
 # print(math.nextafter(100, 200))
 # print(math.nextafter(100, 120, steps=100000000000000))
@@ -76,8 +80,11 @@ import math
 #     count+=1
 # print(sum)
 
-print(math.cbrt(225))
-print(math.log(100))
+# print(math.cbrt(225))
+# print(math.log(100))
+
+print(math.log(int(input("number")), int(input("base"))))
+
 print(math.log2(100))
 print(math.log10(100))
 a = 25000
